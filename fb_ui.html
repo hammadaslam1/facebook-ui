@@ -7,8 +7,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   
 </head>
-<body class="">
-  <header>
+<body class="max-h-screen overflow-hidden">
+  <main class="">
+  <header class="overflow-hidden">
     <div class="container flex flex-wrap flex-row bg-white shadow-sm">
       <div class="p-2 px-4 flex flex-wrap">
         <img class="w-10" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/480px-Facebook_f_logo_%282021%29.svg.png" alt="">
@@ -16,55 +17,191 @@
         <input class="bg-slate-100 pl-3 ml-2 rounded-full w-60 focus:outline-none" placeholder="Searck Facebook" required="" type="text">
       </div>
       <ul class="flex flex-wrap justify-around mx-auto">
-        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 focus:border-b-4 border-blue-500 focus:font-bold  h-full">Home</button></li>
-        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 focus:border-b-4 border-blue-500 focus:font-bold  h-full">Watch</button></li>
-        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 focus:border-b-4 border-blue-500 focus:font-bold  h-full">Marketplace</button></li>
-        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 focus:border-b-4 border-blue-500 focus:font-bold  h-full">Gaming</button></li>
+        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 text-slate-500 font-medium focus:border-b-4 border-blue-500 focus:text-blue-600 focus:font-bold  h-full">Home</button></li>
+        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 text-slate-500 font-medium focus:border-b-4 border-blue-500 focus:text-blue-600 focus:font-bold  h-full">Watch</button></li>
+        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 text-slate-500 font-medium focus:border-b-4 border-blue-500 focus:text-blue-600 focus:font-bold  h-full">Marketplace</button></li>
+        <li class="rounded-2xl my-1 hover:bg-gray-100"><button class="mx-6 text-slate-500 font-medium focus:border-b-4 border-blue-500 focus:text-blue-600 focus:font-bold  h-full">Gaming</button></li>
       </ul>
       <ul class="flex flex-wrap justify-around ml-auto mr-5">
-        <li class="my-2 mx-1  bg-slate-200 rounded-full"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://cdn-icons-png.flaticon.com/512/17/17704.png" alt=""></button></li>
-        <li class="my-2 mx-1 bg-slate-200 rounded-full"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/facebook_messenger_icon_136645.png" alt=""></button></li>
-        <li class="my-2 mx-1 bg-slate-200 rounded-full"><button class="w-10 h-10"><img src="https://cdn1.iconfinder.com/data/icons/twitter-ui-glyph/48/Sed-22-1024.png" alt="" class="mx-auto w-7"></button></li>
-        <li class="my-2 mx-1 bg-slate-200 rounded-full"><button class="w-10 h-10">A</button></li>
+        <li class="my-2 mx-1  bg-slate-200 hover:bg-slate-300 rounded-full"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://cdn-icons-png.flaticon.com/512/17/17704.png" alt=""></button></li>
+        <li class="my-2 mx-1 bg-slate-200 hover:bg-slate-300 rounded-full"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/facebook_messenger_icon_136645.png" alt=""></button></li>
+        <li class="my-2 mx-1 bg-slate-200 hover:bg-slate-300 rounded-full"><button class="w-10 h-10"><img src="https://cdn1.iconfinder.com/data/icons/twitter-ui-glyph/48/Sed-22-1024.png" alt="" class="mx-auto w-7"></button></li>
+        <li class="mt-2 mx-1"><button class="w-10 h-10"><img class="rounded-full" src="profile.jpg" alt=""></button></li>
       </ul>
     </div>
   </header>
 
-  <div class="flex flex-row mt-5">
-    <div class="basis-1/4">
-      <ul class="flex flex-col flex-wrap  justify-around mx-auto">
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">My Profile</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Friends</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Feeds (most recents)</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Groups</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Marketplace</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Watch</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Memories</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Saved</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 hover:bg-slate-200"><button class="mx-4 p-4 focus:border-b-4 border-blue-500  h-full">Professional Dashboard</button></li>
-        <li class="ml-2 rounded-lg my-0 mr-5 border-b border-slate-400"></li>
-      </ul>
-    </div>
-
-
-    
-    
-    
-    
-    <div class="bg-slate-300 basis-2/4 w-full">
-      hammad
-    </div>
-    
-    
-    
-    
-    
-    <div class="bg-slate-400 basis-1/4">
-      <div>
-        <h1>Your Pages and profiles</h1>
+  <div class="flex flex-row mt-5 ">
+    <div class="basis-1/4 flex flex-col overflow-hidden">
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="profile.jpg" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">حماد راجپوت</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Friends</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Feeds (most recent)</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Groups</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Marketplace</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Watch</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Memories</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Saved</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Professional Dashboard</span></button></li>
+        </ul> 
+        <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+          <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="user.png" alt=""></button></span></li>
+          <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">See More</span></button></li>
+        </ul> 
+        <ul>
+          <li class="mx-5 rounded-lg my-5  border-b border-slate-400"></li>
+        </ul>
+        <div class="flex flex-row justify-between mx-6">
+          <h1 class="text-lg text-slate-500 font-medium  my-auto">Your Shortcuts</h1>
+          <ul class="rounded-lg hover:bg-slate-200 active:bg-slate-300">
+            <li class="my-2 mx-1 opacity-60  cursor-pointer"><a class="text-blue-700 font-medium" href="">Edit</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+            <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="page 1.jpg" alt=""></button></span></li>
+            <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Creative Canvas</span></button></li>
+          </ul> 
+          <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+            <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="page 2.jpg" alt=""></button></span></li>
+            <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Saaditz</span></button></li>
+          </ul> 
+        </div>
+      </div>
+  
+  
+      
+      
+      
+      
+      <div class="basis-2/4 w-full overflow-y-scroll" style="height: 90vh;">
+        <div class="flex flex-col bg-white rounded-lg shadow-md">
+          <ul class="flex flex-row justify-center border-b">
+            <li class="rounded-2xl mt-1 hover:bg-slate-100"><button class="w-48 h-14 text-slate-500 font-medium focus:border-b-[3px] border-blue-500 focus:text-blue-600 focus:font-bold">Stories</button></li>
+            <li class="rounded-2xl mt-1 hover:bg-slate-100"><button class="w-48 h-14 text-slate-500 font-medium focus:border-b-[3px] border-blue-500 focus:text-blue-600 focus:font-bold">Reels</button></li>
+            <li class="rounded-2xl mt-1 hover:bg-slate-100"><button class="w-48 h-14 text-slate-500 font-medium focus:border-b-[3px] border-blue-500 focus:text-blue-600 focus:font-bold">Rooms</button></li>
+          </ul>
+          <div class="w-full h-56 p-3 flex flex-row justify-evenly">
+            <div class="w-32 rounded-2xl bg-slate-300 bg-gradient-to-br from-gray-300 to-gray-400 via-gray-200 "></div>
+            <div class="w-32 rounded-2xl bg-slate-300 bg-gradient-to-br from-gray-300 to-gray-400 via-gray-200 "></div>
+            <div class="w-32 rounded-2xl bg-slate-300 bg-gradient-to-br from-gray-300 to-gray-400 via-gray-200 "></div>
+            <div class="w-32 rounded-2xl bg-slate-300 bg-gradient-to-br from-gray-300 to-gray-400 via-gray-200 "></div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-white rounded-lg shadow-md mt-5 p-5 pb-1">
+          <ul class="flex flex-row justify-between">
+            <li class="flex"><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="profile.jpg" alt=""></button></span></li>
+            <li class="flex"><input class="bg-slate-100 pl-3 ml-2 p-1 px-4 w-[520px] rounded-full w-60 focus:outline-none" placeholder="What's on your mind, حماد?" required="" type="text"></li>
+          </ul>
+          <ul class="flex flex-row justify-center border-t mt-5">
+            <li class="rounded-2xl mt-1 hover:bg-gray-100"><button class="w-48 h-12 text-slate-500 font-medium ">Live video</button></li>
+            <li class="rounded-2xl mt-1 hover:bg-gray-100"><button class="w-48 h-12 text-slate-500 font-medium ">Photo/video</button></li>
+            <li class="rounded-2xl mt-1 hover:bg-gray-100"><button class="w-48 h-12 text-slate-500 font-medium ">Feeling/activity</button></li>
+          </ul>
+        </div>
+        <div class="flex flex-col bg-white rounded-lg shadow-md mt-5  pb-1">
+          <div class="p-5">
+            <ul class="flex flex-row">
+              <li class="flex"><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="profile.jpg" alt=""></button></span></li>
+              
+              <li class="ml-0 rounded-lg my-0 mr-5"><button class="mx-0 pl-2 flex flex-col h-full"><span class="ml-1 text-slate-800 font-medium">حماد راجپوت</span><span class="ml-2 text-slate-500 font-normal text-xs">26 April</span></button></li>
+            </ul> 
+          </div>
+          <p class="mb-0 pl-6">Always desire to learn something useful.👓📗</p>
+          <div class="flex flex-row justify-center bg-black mt-3">
+            <img class=" bg-black h-[600px]" src="book.jpg" alt="">
+          </div>
+          <div class="p-3 border-b">
+            <ul class="flex flex-row justify-between">
+              <li><button class="bg-white font-medium px-4 py-2 rounded-lg my-auto"><span class="font-medium text-blue-500">See Insights and Ads</span></button></li>
+              <li><button class="bg-blue-500 font-medium text-white px-4 py-2 rounded-lg my-auto">Advertise</button></li>
+            </ul>
+          </div>
+          <div class="p-1">
+            <ul class="flex flex-row justify-center border-t mt-5">
+              <li class="rounded-2xl mt-1 hover:bg-gray-200 active:bg-gray-300"><button class="w-48 h-12 text-slate-500 font-medium ">Like</button></li>
+              <li class="rounded-2xl mt-1 hover:bg-gray-200 active:bg-gray-300"><button class="w-48 h-12 text-slate-500 font-medium ">Comment</button></li>
+              <li class="rounded-2xl mt-1 hover:bg-gray-200 active:bg-gray-300"><button class="w-48 h-12 text-slate-500 font-medium ">Share</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      <div class="basis-1/4 mx-4 pl-4 overflow-hidden">
+        <div class="flex flex-row justify-between">
+          <h1 class="text-lg text-slate-500 font-medium  my-auto">Your Pages and profiles</h1>
+          <ul>
+            <li class="my-2 mx-1 opacity-60 hover:bg-slate-200 rounded-full active:bg-slate-300 cursor-pointer"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://www.svgrepo.com/show/80953/three-dots-menu.svg" alt=""></button></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex flex-row flex-wrap font-medium mx-5  p-1 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+            <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="page 1.jpg" alt=""></button></span></li>
+            <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2  h-full"><span class="ml-1 text-slate-800">Creative Canvas</span></button></li>
+          </ul> 
+        </div>
+        <div>
+          <h1 class="text-sm text-slate-500 font-normal  my-auto ml-14 mr-6 rounded-md hover:bg-slate-200 p-2 active:bg-slate-300 cursor-pointer">Notifications</h1>
+          <h1 class="text-sm text-slate-500 font-normal  my-auto ml-14 mr-6 rounded-md hover:bg-slate-200 p-2 active:bg-slate-300 cursor-pointer">Switch into Page</h1>
+          <h1 class="text-sm text-slate-500 font-normal  my-auto ml-14 mr-6 rounded-md hover:bg-slate-200 p-2 active:bg-slate-300 cursor-pointer">Create Promotions</h1>
+          <ul>
+            <li class="ml-2 rounded-lg my-5 mr-5 border-b border-slate-400"></li>
+          </ul>
+        </div>
+        <div class="flex flex-row justify-between">
+          <h1 class="text-lg text-slate-500 font-medium  my-auto">Contacts</h1>
+          <ul class="flex flex-row">
+            <li class="my-2 mx-1 opacity-80 hover:bg-slate-200 rounded-full active:bg-slate-300 cursor-pointer"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://cdn.icon-icons.com/icons2/495/PNG/512/video-call-1_icon-icons.com_48394.png" alt=""></button></li>
+            <li class="my-2 mx-1 opacity-70 hover:bg-slate-200 rounded-full active:bg-slate-300 cursor-pointer"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png" alt=""></button></li>
+            <li class="my-2 mx-1 opacity-60 hover:bg-slate-200 rounded-full active:bg-slate-300 cursor-pointer"><button class="w-10 h-10"><img class="mx-auto w-5" src="https://www.svgrepo.com/show/80953/three-dots-menu.svg" alt=""></button></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex flex-row flex-wrap font-medium mx-auto  pl-2 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+            <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="haseeb.jpg" alt=""></button></span></li>
+            <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2 h-full"><span class="ml-1">Abdul Haseeb</span></button></li>
+          </ul> 
+          <ul class="flex flex-row flex-wrap font-medium mx-auto  pl-2 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+            <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="muaz.jpg" alt=""></button></span></li>
+            <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2 h-full"><span class="ml-1">Mooaz Rafique</span></button></li>
+          </ul> 
+          <ul class="flex flex-row flex-wrap font-medium mx-auto  pl-2 rounded-lg hover:bg-slate-200 active:bg-slate-300 cursor-pointer">
+            <li><span class="my-0 mx-0 rounded-full"><button class="w-10 h-10"><img class="rounded-full" src="saad.jpg" alt=""></button></span></li>
+            <li class="ml-0 rounded-lg my-0 mr-5 "><button class="mx-0 p-2 h-full"><span class="ml-1">Muhammad Saad Afzal</span></button></li>
+          </ul> 
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 </body>
 
   <script src="fb_ui.js"></script>
